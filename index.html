@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="description" content="Exercise Frontend Mentor, Contact form">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200..800&display=swap" rel="stylesheet">
+      <link href="style.css" rel="stylesheet" type="text/css">
+      <title>Frontend Mentor | Contact form</title>
+    </head>
+    <body>
+
+      <main class="container">
+
+        <form class="myForm" action="./index.html" method="get" novalidate>
+
+            <h1 class="title text-bold">Contact Us</h1>
+
+            <div class="container-input">
+              <label class="text" for="first-name">First Name<span class="mandatory">*</span></label> 
+              <input class="input-style text" type="text" name="first-name" id="first-name" required>
+            </div>
+
+            <div class="container-input">
+              <label class="text" for="last-name">Last Name<span class="mandatory">*</span></label>
+              <input class="input-style text" type="text" name="last-name" id="last-name" required>
+            </div>
+
+            <div class="container-input">
+              <label class="text" for="email">Email Address<span class="mandatory">*</span></label>
+              <input class="input-style text" type="email" name="email" id="email" required>
+            </div>
+
+            <div class="container-input"> 
+              <p class="text">Query Type<span class="mandatory">*</span></p>
+              <label class="label-radio input-style" for="general">
+                <input type="radio" name="queryType" value="general" id="general" required><span class="text">General Enquiry</span>
+              </label>
+              <label class="label-radio input-style" for="support">
+                <input type="radio" name="queryType" value="support" id="support"><span class="text">Support Request</span>
+              </label>
+            </div>  
+
+            <div class="container-input">
+              <label class="text" for="message">Message<span class="mandatory">*</span></label>
+              <textarea class="input-style text" name="message" id="message" required></textarea>              
+            </div>
+
+            <div class="container-input">
+              <input type="checkbox" name="checkbox" id="checkbox"><span class="text">I consent to being contacted by the team<span class="mandatory">*</span></span>
+            </div>
+
+            <button class="button-submit text-bold" type="submit">Submit</button>
+
+        </form>
+
+      <section class="result">
+        <h2 class="title-result text-bold">Message Sent!</h2>
+        <p class="text text-result">Thanks for completing the form. We'll be in touch soon!</p>
+      </section>  
+      
+      </main> 
+      
+    <script  src="./script.js"></script>
+
+    </body>
+
+</html>
